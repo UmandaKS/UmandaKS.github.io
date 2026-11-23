@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef1f8"/><stop offset="1" stop-color="#dbe1ee"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#eef1f8"/></linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g transform="translate(70 80)">
+    <rect width="330" height="290" rx="24" fill="url(#card)" opacity="0.96"/>
+    <rect x="26" y="26" width="130" height="14" rx="7" fill="#8b5cf6" opacity="0.65"/>
+    <g fill="#8b5cf6">
+      <rect x="30" y="190" width="38" height="68" rx="8"/>
+      <rect x="86" y="150" width="38" height="108" rx="8"/>
+      <rect x="142" y="110" width="38" height="148" rx="8"/>
+      <rect x="198" y="70" width="38" height="188" rx="8"/>
+      <rect x="254" y="130" width="38" height="128" rx="8"/>
+    </g>
+    <path d="M30 100 L90 80 L150 95 L215 45 L272 70" fill="none" stroke="#515c76" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  <g transform="translate(470 150)" fill="none" stroke="#0d1220" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M20 20 h34 l28 130 h120 l30 -96 h-130"/>
+    <circle cx="90" cy="185" r="14"/><circle cx="182" cy="185" r="14"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="22" font-weight="700" fill="#0d1220" opacity="0.75">SALES · STOCK · CUSTOMERS</text>
+</svg>

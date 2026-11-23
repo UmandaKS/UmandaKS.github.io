@@ -1,0 +1,12 @@
+{
+  "profile photo.jpg": {
+    "title": "Portrait",
+    "description": "Umanda Kumarasinghe",
+    "category": "Portrait"
+  },
+  "pasted-image-2026-11-23T18-50-17.png": {
+    "title": "Recent Photo",
+    "description": "Recently added gallery image",
+    "category": "Photos"
+  }
+}
