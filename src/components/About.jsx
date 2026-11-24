@@ -15,13 +15,6 @@ export default function About() {
 
         <div className="about__layout">
           <div className="about__media reveal">
-            <div className="about__image-card">
-              <img src={profile.profileImage} alt={`${profile.name} portrait`} loading="lazy" />
-              <div className="about__image-caption">
-                <Icon name="Sparkles" size={17} />
-                <span>Systems · Networking · Cloud &amp; IoT</span>
-              </div>
-            </div>
             <div className="about__facts">
               {profile.quickFacts.map((fact) => (
                 <div className="about__fact" key={fact.label}>
