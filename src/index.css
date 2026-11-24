@@ -851,45 +851,75 @@ img {
   align-items: start;
 }
 
-.about__image-card {
+.about__feature {
   position: relative;
-  padding: 12px;
-  border: 1px solid rgba(109, 63, 245, 0.38);
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: var(--card-gradient);
-  box-shadow: var(--shadow-soft), 0 0 0 5px rgba(109, 63, 245, 0.06);
+  background: var(--surface-2);
+  box-shadow: var(--shadow-soft);
 }
 
-[data-theme='dark'] .about__image-card {
-  border-color: rgba(139, 92, 246, 0.3);
+.about__feature::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 10, 18, 0) 42%, rgba(7, 10, 18, 0.86) 100%);
+  pointer-events: none;
 }
 
-.about__image-card img {
+.about__feature img {
+  display: block;
   width: 100%;
-  aspect-ratio: 0.95;
-  border: 1px solid rgba(109, 63, 245, 0.35);
-  border-radius: 18px;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
+  transition: transform 0.5s ease;
 }
 
-.about__image-caption {
-  display: flex;
+.about__feature:hover img {
+  transform: scale(1.03);
+}
+
+.about__feature-overlay {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  right: 20px;
+  bottom: 18px;
+  display: grid;
+  gap: 7px;
+  color: #fff;
+}
+
+.about__feature-tag {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 14px 8px 4px;
-  color: var(--muted);
-  font-size: 0.8rem;
+  gap: 6px;
+  justify-self: start;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.about__image-caption svg {
-  color: var(--secondary);
+.about__feature-text {
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .about__facts {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin-top: 12px;
 }
 
 .about__fact {

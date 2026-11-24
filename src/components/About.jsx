@@ -1,3 +1,4 @@
+import aboutPhoto from '../../gallery/IMG-20260130-WA0012.jpg'
 import { profile } from '../data/profile'
 import Icon from './Icon'
 import SectionHeading from './SectionHeading'
@@ -15,6 +16,15 @@ export default function About() {
 
         <div className="about__layout">
           <div className="about__media reveal">
+            <figure className="about__feature">
+              <img src={aboutPhoto} alt={`${profile.name} in ${profile.location}`} loading="lazy" />
+              <figcaption className="about__feature-overlay">
+                <span className="about__feature-tag">
+                  <Icon name="MapPin" size={13} /> {profile.location}
+                </span>
+                <span className="about__feature-text">Curious mind, practical build.</span>
+              </figcaption>
+            </figure>
             <div className="about__facts">
               {profile.quickFacts.map((fact) => (
                 <div className="about__fact" key={fact.label}>
