@@ -17,12 +17,11 @@ export default function About() {
         <div className="about__layout">
           <div className="about__media reveal">
             <figure className="about__feature">
-              <img src={aboutPhoto} alt={`${profile.name} in ${profile.location}`} loading="lazy" />
+              <img src={aboutPhoto} alt={`${profile.name} in Malabe, Sri Lanka`} loading="lazy" />
               <figcaption className="about__feature-overlay">
                 <span className="about__feature-tag">
-                  <Icon name="MapPin" size={13} /> {profile.location}
+                  <Icon name="MapPin" size={13} /> Malabe, Sri Lanka
                 </span>
-                <span className="about__feature-text">Curious mind, practical build.</span>
               </figcaption>
             </figure>
             <div className="about__facts">

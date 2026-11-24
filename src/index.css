@@ -909,12 +909,6 @@ img {
   text-transform: uppercase;
 }
 
-.about__feature-text {
-  font-size: 0.96rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
 .about__facts {
   display: grid;
   grid-template-columns: 1fr 1fr;
